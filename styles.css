@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  background-color: black;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+h3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+body {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh; /* Add this line */
+}
+/* body
+img {
+  border-radius: 10px;
+  object-fit: cover;
+} */
+.main-layout {
+  width: 95%;
+  margin: 45px auto 0;
+  margin-bottom: 45px;
+  /* height: 100%; */
+}
+.user-card {
+  background-color: rgba(25, 25, 24, 255);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.top-half {
+  display: flex;
+  align-items: stretch;
+}
+.bottom-half {
+  padding: 10px;
+  padding-bottom: 70px;
+  position: relative;
+}
+.pfp-block {
+  background-color: rgba(34, 34, 34, 255);
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  position: relative;
+  border-bottom-right-radius: 20px;
+}
+.pfp-container {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.user-name {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+.pinned-image-container {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  padding: 15px;
+}
+.pinned-image {
+  border-radius: 10px;
+}
+.pfp-container img {
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
+}
+button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(225, 186, 75, 255);
+  border-radius: 20px;
+  border: none;
+  width: 100px;
+  padding: 0.5rem;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "a b"
+    "a c"
+    "d d";
+  gap: 8px;
+  width: 100%;
+  height: 100%;
+  margin-top: 25px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container:nth-child(1) {
+  grid-area: a;
+}
+
+.image-container:nth-child(2) {
+  grid-area: b;
+}
+
+.image-container:nth-child(3) {
+  grid-area: c;
+}
+
+.image-container:nth-child(4) {
+  grid-area: d;
+}
